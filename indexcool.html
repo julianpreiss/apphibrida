@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>APP singlepage - Julian Preiss</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>  
+    <!--VENTANAS MODALES-->
+    <div class="modales"></div>
+    <div class="modalesartistas">
+
+        <div class="modal fade" id="modalunopacks" role="dialog" aria-labelledby="modalunopacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Charly García</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/charly.jpg">
+                            <figcaption>Pack de todas las canciones disponibles del artista Charly García (27)</figcaption>
+                        </figure>
+                        <span>$4000</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="compracharly btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modaldospacks" role="dialog" aria-labelledby="modaldospacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Gustavo Cerati</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/cerati.jpg">
+                            <figcaption>Pack de todas las canciones disponibles del artista Gustavo Cerati (16)</figcaption>
+                        </figure>
+                        <span>$3100</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="compracerati btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modaltrespacks" role="dialog" aria-labelledby="modaltrespacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Luis Alberto Spinetta</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/spinetta.jpg">
+                            <figcaption>Pack de todas las canciones disponibles del artista Luis Alberto Spinetta(42)</figcaption>
+                        </figure>
+                        <span>$6200</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="compraspinetta btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalcuatropacks" role="dialog" aria-labelledby="modalcuatropacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>León Gieco</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/gieco.jpg">
+                            <figcaption>Pack de todas las canciones disponibles del artista León Gieco(8)</figcaption>
+                        </figure>
+                        <span>$1200</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="compragieco btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalcincopacks" role="dialog" aria-labelledby="modalcincopacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Mercedes Sosa</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/sosa.png">
+                            <figcaption>Pack de todas las canciones disponibles de la artista Mercedes Sosa(17)</figcaption>
+                        </figure>
+                        <span>$2500</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="comprasosa btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalseispacks" role="dialog" aria-labelledby="modalseispacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Miranda</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/mirandaartist.png">
+                            <figcaption>Pack de todas las canciones disponibles de la banda Miranda(8)</figcaption>
+                        </figure>
+                        <span>$1000</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="compramiranda btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalsietepacks" role="dialog" aria-labelledby="modalsietepacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Fito Paez</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/fitoartist.png">
+                            <figcaption>Pack de todas las canciones disponibles del artista Fito Paez(26)</figcaption>
+                        </figure>
+                        <span>$4050</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="comprafito btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalochopacks" role="dialog" aria-labelledby="modalochopacks" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Virus</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="imagenes/virus.jpg">
+                            <figcaption>Pack de todas las canciones disponibles de la banda Virus(9)</figcaption>
+                        </figure>
+                        <span>$700</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="compravirus btn btn-primary comprar" data-dismiss="modal">Agregar al carrito</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="modal fade divmodal" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Carrito</h2>
+                    <button type="button" class="close cierrecarrito" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body minicarrito text-center">
+                    <p>No hay productos en el carrito</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary aceptarcarrito" data-dismiss="modal">Seguir comprando</button>
+                    <button class="btn btn-info llevarapago" data-dismiss="modal" role="button" data-toggle="modal" data-target="#modalpago">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade divmodal" id="modalpago" tabindex="-1" role="dialog" aria-labelledby="modalpago" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Pago</h2>
+                    <button type="button" class="close cierrecarrito" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body payment text-center">
+                    <span>Modal de pago</span>
+                </div>
+                <div class="modal-footer text-center d-flex flex-column justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade divmodal" id="informacion" tabindex="-1" role="dialog" aria-labelledby="informacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Información de app</h2>
+                    <button type="button" class="close cierrecarrito" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <ul class="list-group">
+                        <li class="list-group-item"> 
+                            <span class="d-block mb-3">Julian Preiss</span> 
+                            <img src="imagenes/fotopersonal.jpg" alt="Foto de Julián Preiss"> 
+                        </li>
+                        <li class="list-group-item">Desarrollo Web</li>
+                        <li class="list-group-item">DWM2A</li>
+                        <li class="list-group-item">2020</li>
+                        <li class="list-group-item">2° cuatrimestre</li>
+                        <li class="list-group-item">Profesor Omar Toyos</li>
+                        <li class="list-group-item">Carácter de entrega: Final</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-column justify-content-center">
+                    <button type="button" class="btn btn-info aceptarcarrito" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--SECCION ARTICULOS-->
+
+
+    <div class="container-fluid" data-role="page" id="dos">
+
+        <h2 class="col-12 mt-5 pt-4 h4 text-center font-weight-light">Búsqueda por Artículo</h2>
+
+        <div class="row" id="seccionarticulos">
+                <div class="columnasindex col-12 col-sm-6 text-center py-3">
+
+                </div>
+    
+                <div class="columnasindex col-12 col-sm-6 pb-5 pt-0 pt-sm-5 pb-3 text-center">
+
+                </div>
+
+        </div>
+    </div>
+
+
+    <!--SECCION PACKS ARTISTAS-->
+
+
+    <div class="container-fluid" data-role="page" id="tres">
+        <div class="row d-flex text-center mt-3 mt-sm-5">
+
+            <h2 class="col-12 mt-5 pt-3 h4 text-center font-weight-light">Packs por artistas</h2>
+
+            <a class="col-12" href="modalunopacks" role="button" data-toggle="modal" data-target="#modalunopacks">
+            <div>
+                <div class="sugeridos" id="charly">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">CHARLY GARCIA</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modaldospacks" role="button" data-toggle="modal" data-target="#modaldospacks">
+            <div>
+                <div class="sugeridos" id="cerati">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">GUSTAVO CERATI</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modaldtrespacks" role="button" data-toggle="modal" data-target="#modaltrespacks">
+            <div>
+                <div class="sugeridos" id="spinetta">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">L.A. SPINETTA</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modalcuatropacks" role="button" data-toggle="modal" data-target="#modalcuatropacks">
+            <div>
+                <div class="sugeridos" id="gieco">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">LEON GIECO</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modalcincopacks" role="button" data-toggle="modal" data-target="#modalcincopacks">
+            <div>
+                <div class="sugeridos" id="sosa">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">MERCEDES SOSA</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modalseispacks" role="button" data-toggle="modal" data-target="#modalseispacks">
+            <div>
+                <div class="sugeridos" id="miranda">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">MIRANDA</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modalsietepacks" role="button" data-toggle="modal" data-target="#modalsietepacks">
+            <div>
+                <div class="sugeridos" id="fito">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">FITO PAEZ</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a class="col-12" href="modalochopacks" role="button" data-toggle="modal" data-target="#modalochopacks">
+            <div class="pb-3 mb-4">
+                <div class="sugeridos" id="virus">
+                    <div class="divnegro d-flex justify-content-center align-items-center">
+                        <h3 class="nombres-artistas">VIRUS</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!--SECCION PROMOCIONES-->
+
+    <div class="container-fluid" data-role="page" id="cuatro">
+        <div class="row border-bottom mb-3 py-3 px-3">
+            <h2 class="col-12 mt-5 pt-3 h4 text-center font-weight-light">Combos y promociones</h2>
+        </div>
+        <div id="promo" class="row">
+            <div class="columnaspromo col-12 col-sm-6 text-center py-3">
+
+            </div>
+
+            <div class="columnaspromo col-12 col-sm-6 pb-5 pt-0 pt-sm-5 pb-3 text-center">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--MENU PRINCIPAL-->
+
+    <div class="container-fluid" data-role="page" id="uno">
+        
+
+
+        <section id="seccionbajoheader">
+            <p>Hola, <span>User!</span></p>
+            <p>Buenos días y bienvenido.</p>
+
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4" id="indexprimero">
+
+            </div>
+
+        </section>
+
+        <section>
+        <h2>Últimas Búsquedas</h2>
+
+        <div class="scrolling-wrapper row ultimas flex-row flex-nowrap mt-4 pb-4">
+			
+			<div class="col">
+                <a href="#" data-toggle="modal" data-target="#dieciseis">
+                    <figure class="figure">
+                        <img src="imagenes/tresagujas-2x.jpg" alt="foto" class="figure-img">
+                    </figure>     
+                </a>              
+			</div>
+			<div class="col">
+                <a href="#" data-toggle="modal" data-target="#noveno">
+                    <figure class="figure">
+                        <img src="imagenes/litto-nebbia-2x.jpg" alt="foto" class="figure-img">
+                    </figure>
+                </a>
+			</div>
+			<div class="col">
+                <a href="#" data-toggle="modal" data-target="#dieciocho">
+                    <figure class="figure">
+                        <img src="imagenes/artaud-2x.jpg" alt="foto" class="figure-img">
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" data-toggle="modal" data-target="#trece">
+                <figure class="figure">
+                    <img src="imagenes/sueter-2x.jpg" alt="foto" class="figure-img">
+                </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" data-toggle="modal" data-target="#veintitres">               
+                <figure class="figure">
+                    <img src="imagenes/ukelele.jpg" alt="foto" class="figure-img">
+                </figure>
+                </a>
+			</div>
+        </div>
+    </section>
+
+        <h2>Recomendados</h2>
+        <span><a href="#dos">Ver todo</a></span>
+        <div class="row" id="indextercero">
+
+            <div class="columnasindex col-12 col-sm-6 text-center d-flex flex-column align-items-center py-3">
+
+            </div>
+
+            <div class="columnasindex col-12 col-sm-6 pt-0 pt-sm-5 pb-5 text-center">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NAV -->
+
+    <div class="headerblue row border-bottom mb-3 px-3 fixed-top mx-0">
+
+        <a id="informaciondisp" href="#" class="informacion" data-toggle="modal" data-target="#informacion"><img src="imagenes/info.svg" alt="icono de informacion"></a>
+
+        <h1 id="h1logo">Cool Dolphins</h1>
+
+        <a id="minicarrito" href="#" class="carritoheader" data-toggle="modal" data-target="#modal"><img src="imagenes/cart.svg" alt="icono carrito de compras"></a>
+    
+    </div>
+
+    <nav class="navbar navbar-expand navbar-light fixed-bottom mb-0 border-top">
+        <div class="collapse navbar-collapse" id="barrados">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link border-right" href="#uno"><img src="imagenes/home.svg" alt="icono"><span class="navspan">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-right" href="#dos"><img src="imagenes/productos.svg" alt="icono"><span class="navspan">Productos</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-right" href="#tres"><img src="imagenes/artist.svg" alt="icono"><span class="navspan">Artistas</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cuatro"><img src="imagenes/promo.svg" alt="icono"><span class="navspan">Promos</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="js/productos.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

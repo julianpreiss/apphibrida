@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Sans Serif';
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.borde {
+    border: solid 1px white;
+}
+
+.headerblue {
+    background-color: #4F77B0;  
+    height: 52px;  
+}
+
+#h1logo {
+    background: url('../imagenes/logo-mobile.png') no-repeat center;
+    height: 39px;
+    width:142px;
+    left: 50%;
+    margin-left: -71px;
+    line-height: 16px;
+    font-size: 0;
+    top: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+.navbar {
+    padding: 0;
+    background: #4F77B0;
+}
+
+.navbar-nav {
+    width: 100%;
+    background: none;
+    flex-wrap: nowrap;
+}
+
+
+.nav-item {
+    flex: 1;
+    padding: 0;
+}
+
+.nav-link {
+    background-color: none;
+    text-align: center;
+}
+
+#seccionbajoheader {
+    margin-top: 70px;
+}
+
+img[src*=".svg"] {
+    height: 1.5em;
+    opacity: .6;
+}
+
+.carritoheader {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.informacion {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.carritoheader img {
+    height: 2.2em;
+}
+
+.informacion img {
+    height: 1.9em;
+}
+
+
+nav .nav-item:nth-of-type(1) img[src*=".svg"] {
+    opacity: 1;
+}
+
+
+
+[data-role="page"]:target ~ nav .nav-item img[src*=".svg"] {
+    opacity: .6;
+}
+
+.navspan{
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+#uno:target ~ nav .nav-item:nth-of-type(1) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#dos:target ~ nav .nav-item:nth-of-type(2) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#tres:target ~ nav .nav-item:nth-of-type(3) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#cuatro:target ~ nav .nav-item:nth-of-type(4) img[src*=".svg"] {
+    opacity: 1;
+}
+
+[data-role="page"] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 2.5rem;
+}
+
+
+#uno {
+    display: block;
+}
+
+
+[data-role="page"]:target {
+    display: block;
+}
+
+#dos:target ~ #uno,
+#tres:target ~ #uno,
+#cuatro:target ~ #uno {
+    display: none;
+}
+
+/* Codigo para hacer el scroll horizontal de productos */
+
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+
+.scrolling-wrapper > img {
+    max-height: 117px;
+}
+
+.columnasindex a, .columnaspromo a {
+    border:solid 1px#aaa;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-self: center;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:center;
+    max-width: 350px;
+    margin-bottom: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.columnasindex a figure img, .columnaspromo a figure img{
+    max-width: 80%;
+}
+
+.ultimas figure img {
+    max-height: 250px;
+}
+
+
+/*PAGINA DOS*/
+
+.sugeridos {
+    width: calc(100vw - 2em);
+    height: calc((100vw - 2em) * 0.3397);
+
+    margin: 20px auto;
+  }
+
+.divnegro {
+    width: calc(100vw - 2em);
+    height: calc((100vw - 2em) * 0.3397);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+.nombres-artistas {
+      color: white;
+      font-weight: 600;
+  }
+
+#charly {
+    background: url('../imagenes/charly.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#cerati {
+    background: url('../imagenes/cerati.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#spinetta {
+    background: url('../imagenes/spinetta.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#virus {
+    background: url('../imagenes/virus.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#sosa {
+    background: url('../imagenes/sosa.png') no-repeat center;
+    background-size: cover;
+}
+
+#fito {
+    background: url('../imagenes/fitoartist.png') no-repeat center;
+    background-size: cover;
+}
+
+#miranda {
+    background: url('../imagenes/mirandaartist.png') no-repeat center;
+    background-size: cover;
+}
+
+#gieco {
+    background: url('../imagenes/giecoartist.png') no-repeat center;
+    background-size: cover;
+}
+
+  @media screen and (min-width: 447px) {
+    
+    #charly {
+        background: url('../imagenes/charly-2x.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #cerati {
+        background: url('../imagenes/cerati-2x.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #spinetta {
+        background: url('../imagenes/spinetta-2x.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #virus {
+        background: url('../imagenes/virus-2x.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #sosa {
+        background: url('../imagenes/sosa-2x.png') no-repeat center;
+        background-size: cover;
+    }
+    
+    #fito {
+        background: url('../imagenes/fitoartist-2x.png') no-repeat center;
+        background-size: cover;
+    }
+    
+    #miranda {
+        background: url('../imagenes/mirandaartist-2x.png') no-repeat center;
+        background-size: cover;
+    }
+    
+    #gieco {
+        background: url('../imagenes/giecoartist-2x.png') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.modal-body {
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 0px;
+}
+
+.modal-header {
+    align-items: center;
+    text-align: center;
+}
+
+.modal-body img {
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.modal-body figcaption {
+    margin: 10px;
+}
+
+.minicarrito ul {
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+}
+
+.minicarrito ul li {
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+}
+
+.miniatura {
+max-height: 90px;
+margin: 5px auto;
+padding-top: 10px;
+}
+
+.pastillacarrito {
+border: solid 1px #444;
+border-radius: 50px;
+width: 90vw;
+max-width: 400px;
+margin: 10px auto;
+}
+
+.pastillacarrito span {
+    margin: 5px;
+}
+
+.quitar {
+    max-width: 80px;
+    align-self: center;
+}
+
+.modal {
+    overflow-y:auto;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+form label {
+    display: block;
+}
+
+form input{
+    margin-bottom: 20px;
+}
+
+fieldset div input, .inlineb {
+	display: inline-block;
+}
+
+.inlineb {
+	margin-left: 5px;
+}
+
+.enviar {
+	flex-basis: 100%;
+	max-width: 200px;
+	margin: 0em 8em;
+	
+}
